@@ -57,7 +57,7 @@ public class MainActivity extends AppCompatActivity {
         textView = (TextView) findViewById(R.id.TagText);
         // SDK
         if (readers == null) {
-            readers = new Readers(this, ENUM_TRANSPORT.SERVICE_SERIAL);
+            readers = new Readers(this, ENUM_TRANSPORT.BLUETOOTH);
         }
 
         new ConnectReaderTask(this).execute();
